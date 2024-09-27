@@ -1,0 +1,118 @@
+
+:root {
+    
+    --clr-orange-dark: rgb(194, 99, 36);
+    --clr-red-light: rgb(228, 80, 80);
+    --clr-red-light-opacity: rgba(228, 80, 80, 0.514);
+
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-secondary: hsla(182, 63%, 54%);
+    --clr-black: #222;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+  }
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.container__image{
+    width: 70%;
+    overflow: hidden;
+    
+}
+
+.container__image  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container__form{
+    width: 30%;
+}
+
+.container__form-title{
+    width: 100%;
+    color:var(--clr-orange-dark);
+    text-align: center;
+    margin-top: 70px;
+}
+
+.container__form-div{
+    margin-top: 40px;
+}
+.form{
+   width: 400px;
+   margin:auto;
+    
+}
+
+
+.form__input{
+    display: block;
+    margin-bottom: 40px;
+    margin-top:10px;
+    padding: 8px 0;
+    width:400px;
+}   
+
+.form__input--submit{
+    background-color: var(--clr-orange-dark);
+    border: none;
+    padding:10px 70px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.form__input{
+    text-align: center;
+}
+
+.container__form-pass{
+    text-align: center;
+}
+
+.container__form-pass > a{
+    text-decoration: none;
+}
+
+.form__alert{
+    width: 0px;
+    background-color: var(--clr-red-light-opacity);
+    height: 0px;
+    text-align: center;
+    padding-top: 20px;
+    border: solid var(--clr-red-light) 2px;
+    visibility: hidden;
+    overflow: hidden;
+    
+}
+
+.form__alert--enable{
+    height: 60px;
+    width: 400px;
+    visibility: visible;
+}
+
+
+
+
+
